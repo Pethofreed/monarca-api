@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 function connect () {
-  const MongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/hotel-app'
+  const MongoURI = process.env.MONGO_URL || 'mongodb://localhost:27017/hotel-app'
   const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
