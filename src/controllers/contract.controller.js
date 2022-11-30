@@ -18,7 +18,7 @@ module.exports = {
   },
   async getContracts (req, res) {
     try {
-      const contracts = await Contract.find({ contractStatus: 'initiated'})
+      const contracts = await Contract.find({ contractStatus: 'initiated' })
       res.status(201).json(contracts)
     } catch (error) {
       res.status(400).json({ error })
